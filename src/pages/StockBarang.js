@@ -12,7 +12,7 @@ const StockBarang = () => {
           <div className="row">
             <div className="col-lg-12">
               <h2 className="page-header" style={{ fontWeight: "bold" }}>
-                DATA PEMBELIAN BARANG
+                DATA STOK BARANG
               </h2>
             </div>
           </div>
@@ -183,10 +183,10 @@ const StockBarang = () => {
                   <thead>
                     <tr>
                       <th scope="col">Kode Barang</th>
-                      <th scope="col">Tanggal Beli</th>
-                      <th scope="col">Jumlah Beli</th>
+                      <th scope="col">Nama Barang</th>
+                      <th scope="col">Jumlah Barang</th>
                       <th scope="col">Harga Satuan</th>
-                      <th scope="col">Total Harga</th>
+                      {/* <th scope="col">Total Harga</th> */}
                       <th scope="col">Aksi</th>
                     </tr>
                   </thead>
@@ -194,10 +194,10 @@ const StockBarang = () => {
                     {/* Sample row, you can dynamically populate this part using your data */}
                     <tr>
                       <td>ABC123</td>
-                      <td>2024-03-10</td>
+                      <td>SABUN BOLONG</td>
                       <td>10</td>
                       <td>50.00</td>
-                      <td>500.00</td>
+                      {/* <td>500.00</td> */}
                       <td>
                         <button
                           className="btn"
@@ -209,6 +209,8 @@ const StockBarang = () => {
                             data-target="#editBarang"
                           ></i>
                         </button>
+                        {/* delete stok barang */}
+                        <button className="btn" style={{marginLeft:"10px", backgroundColor:"red", color:"white"}}><i className="fa fa-trash" aria-hidden="true"></i></button>
                       </td>
                     </tr>
                     {/* Add more rows as needed */}
@@ -230,7 +232,7 @@ const StockBarang = () => {
                           id="barangModalLabel"
                           style={{ fontWeight: "bold" }}
                         >
-                          Tambah Barang
+                          Edit Stok Barang
                         </h4>
                       </div>
                       <div className="modal-body">
@@ -246,21 +248,22 @@ const StockBarang = () => {
                               required
                             />
                           </div>
+                          
 
                           <div className="form-group">
-                            <label htmlFor="tanggalBeli">Tanggal Beli:</label>
+                            <label htmlFor="namaBarang">Nama Barang:</label>
                             <input
                               type="text"
                               className="form-control"
-                              id="tanggalBeli"
-                              name="tanggalBeli"
-                              value="2024-03-10"
+                              id="namaBarang"
+                              value="sabun bolong"
+                              name="namaBarang"
                               required
                             />
                           </div>
 
                           <div className="form-group">
-                            <label htmlFor="jumlahBeli">Jumlah Beli:</label>
+                            <label htmlFor="jumlahBarang">Jumlah Barang:</label>
                             <input
                               type="number"
                               className="form-control"
@@ -283,17 +286,6 @@ const StockBarang = () => {
                             />
                           </div>
 
-                          <div className="form-group">
-                            <label htmlFor="totalHarga">Total Harga:</label>
-                            <input
-                              type="number"
-                              className="form-control"
-                              id="totalHarga"
-                              name="totalHarga"
-                              value="500.00"
-                              required
-                            />
-                          </div>
                           <button
                             type="button"
                             className="btn btn-danger"

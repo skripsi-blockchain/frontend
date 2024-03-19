@@ -4,89 +4,89 @@ import Navbar from "./layout/Navbar";
 import Sidebar from "./layout/Sidebar";
 
 const LaporanKeuangan = () => {
-  useEffect(() => {
-    const xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
-    const yValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+  // useEffect(() => {
+  //   const xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+  //   const yValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 
-    const chart1 = new Chart("myChart", {
-      type: "line",
-      data: {
-        labels: xValues,
-        datasets: [
-          {
-            label: "Dataset 1",
-            data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
-            borderColor: "red",
-            fill: false,
-          },
-          {
-            label: "Dataset 2",
-            data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
-            borderColor: "green",
-            fill: false,
-          },
-          {
-            label: "Dataset 3",
-            data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
-            borderColor: "blue",
-            fill: false,
-          },
-        ],
-      },
-      options: {
-        legend: {
-          display: true,
-          position: "bottom",
-          labels: {
-            boxWidth: 15,
-            fontSize: 10,
-          },
-        },
-      },
-    });
+  //   const chart1 = new Chart("myChart", {
+  //     type: "line",
+  //     data: {
+  //       labels: xValues,
+  //       datasets: [
+  //         {
+  //           label: "Dataset 1",
+  //           data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+  //           borderColor: "red",
+  //           fill: false,
+  //         },
+  //         {
+  //           label: "Dataset 2",
+  //           data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+  //           borderColor: "green",
+  //           fill: false,
+  //         },
+  //         {
+  //           label: "Dataset 3",
+  //           data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+  //           borderColor: "blue",
+  //           fill: false,
+  //         },
+  //       ],
+  //     },
+  //     options: {
+  //       legend: {
+  //         display: true,
+  //         position: "bottom",
+  //         labels: {
+  //           boxWidth: 15,
+  //           fontSize: 10,
+  //         },
+  //       },
+  //     },
+  //   });
 
-    const chart2 = new Chart("myChart2", {
-      type: "line",
-      data: {
-        labels: yValues,
-        datasets: [
-          {
-            label: "Dataset 1",
-            data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
-            borderColor: "red",
-            fill: false,
-          },
-          {
-            label: "Dataset 2",
-            data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
-            borderColor: "green",
-            fill: false,
-          },
-          {
-            label: "Dataset 3",
-            data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
-            borderColor: "blue",
-            fill: false,
-          },
-        ],
-      },
-      options: {
-        legend: {
-          display: true,
-          position: "bottom",
-          labels: {
-            boxWidth: 15,
-            fontSize: 10,
-          },
-        },
-      },
-    });
+  //   const chart2 = new Chart("myChart2", {
+  //     type: "line",
+  //     data: {
+  //       labels: yValues,
+  //       datasets: [
+  //         {
+  //           label: "Dataset 1",
+  //           data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+  //           borderColor: "red",
+  //           fill: false,
+  //         },
+  //         {
+  //           label: "Dataset 2",
+  //           data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+  //           borderColor: "green",
+  //           fill: false,
+  //         },
+  //         {
+  //           label: "Dataset 3",
+  //           data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+  //           borderColor: "blue",
+  //           fill: false,
+  //         },
+  //       ],
+  //     },
+  //     options: {
+  //       legend: {
+  //         display: true,
+  //         position: "bottom",
+  //         labels: {
+  //           boxWidth: 15,
+  //           fontSize: 10,
+  //         },
+  //       },
+  //     },
+  //   });
 
-    return () => {
-      chart1.destroy();
-      chart2.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     chart1.destroy();
+  //     chart2.destroy();
+  //   };
+  // }, []);
 
   return (
     <div>
@@ -153,7 +153,8 @@ const LaporanKeuangan = () => {
               </div>
             </div>
           </div>
-          <div className="row" style={{ marginTop: "3vh" }}>
+          {/* grafik pemasukan */}
+          {/* <div className="row" style={{ marginTop: "3vh" }}>
             <div className="col-lg-6">
               <div className="panel panel-default">
                 <div className="panel-body">
@@ -220,14 +221,14 @@ const LaporanKeuangan = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col-lg-12">
               <h3
                 className="page-header"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
-                LAPORAN PEMASUKAN
+                LAPORAN POINT OF SALE
               </h3>
             </div>
           </div>
@@ -288,7 +289,7 @@ const LaporanKeuangan = () => {
                 >
                   <thead>
                     <tr>
-                      <th>Kode Transaksi</th>
+                      <th>Kode </th>
                       <th>Tanggal</th>
                       <th>Kuantitas</th>
                       <th>Jumlah Transaksi</th>

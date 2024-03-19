@@ -12,7 +12,7 @@ const PembelianStockBarang = () => {
           <div className="row">
             <div className="col-lg-12">
               <h2 className="page-header" style={{ fontWeight: "bold" }}>
-                DATA PEMBELIAN BARANG
+                DATA PEMBELIAN STOK BARANG
               </h2>
             </div>
           </div>
@@ -113,6 +113,17 @@ const PembelianStockBarang = () => {
                           required
                         />
                       </div>
+                      <div className="form-group">
+                            <label htmlFor="namaBarang">Nama Barang:</label>
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="namaBarang"
+                              value="sabun bolong"
+                              name="namaBarang"
+                              required
+                            />
+                          </div>
 
                       <div className="form-group">
                         <label htmlFor="tanggalBeli">Tanggal Beli:</label>
