@@ -295,7 +295,7 @@ const PembelianStockBarang = () => {
               </div>
             </div>
           </div>
-          <footer style={{ textAlign: "center", paddingTop: "25vh" }}>
+          <footer style={{ textAlign: "center", paddingTop: "25vh"}}>
             <p>2024 &copy; Point of Sale</p>
           </footer>
         </div>

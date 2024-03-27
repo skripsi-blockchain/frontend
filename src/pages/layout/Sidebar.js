@@ -12,16 +12,16 @@ const Sidebar = () => {
   }, []); // useEffect hanya akan dipanggil sekali saat komponen dimuat pertama kali
 
   return (
-    <aside className="sidebar navbar-default" role="navigation">
+    <aside className="sidebar navbar-default" role="navigation" style={{position:"fixed"}}>
       <div className="sidebar-nav navbar-collapse" style={{ marginLeft: "1vh" }}>
-        <ul className="nav" id="side-menu">
+        <ul className="nav" id="side-menu" >
           <li className={`nav-item ${activeLink === "/data_transaksi" ? "active" : ""}`}>
             <a href="data_transaksi" className="nav-link" aria-current="page" style={{ color: "black" }}>
               <i className="fa fa-tasks"></i> Data Transaksi
             </a>
           </li>
           <li className={`mt-2 nav-item ${activeLink === "/stock_barang" ? "active" : ""}`}>
-            <a href="stock_barang" className="nav-link link-dark" style={{ color: "black" }}>
+            <a href="stock_barang" className="nav-link link-dark" style={{ color: "black", }}>
               <i className="fa fa-inbox"></i> Stock Barang
             </a>
           </li>
